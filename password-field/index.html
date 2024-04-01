@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="" class="form">
+        <h1 class="heading-primary">Enter your password</h1>
+
+        <figure class="user">
+          <img src="./gaston.png" alt="user" class="user__img" />
+          <figurecaption class="user__caption">
+            <small class="text--secondary">Buissnes Account</small>
+            <h3 class="heading-tertiary">Gaston Castro</h3>
+          </figurecaption>
+        </figure>
+
+        <div class="from__field">
+          <label class="form__label" for="password">Password</label>
+          <i class="fa-solid fa-lock icon icon--left"></i>
+          <i class="fa-solid fa-eye-slash icon icon--right show"></i>
+          <i class="fa-regular fa-eye icon icon--right hidde"></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="*********"
+            required
+            class="form__input"
+            minlength="8"
+          />
+          <p class="error-msg">Password is invalid</p>
+        </div>
+
+        <div class="flex">
+          <div class="switch">
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              class="switch__input"
+            />
+            <label for="remember" class="switch__label"
+              >Stay singed in
+              <div class="switch__content">
+                <span class="switch__dot"></span>
+              </div>
+            </label>
+          </div>
+          <button type="submit" class="btn">Log In</button>
+        </div>
+        <a href="#" class="link">Reset password</a>
+      </form>
+    </div>
+  </body>
+</html>
