@@ -91,8 +91,11 @@ img {
   left: 25px;
 }
 
-.icon--right {
+.password-visibility {
   right: 15px;
+}
+.fa-eye-slash::before {
+  z-index: 1000;
 }
 
 .user {
